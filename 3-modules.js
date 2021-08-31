@@ -3,7 +3,10 @@
 
 // get the module from 4-names.js file
 const names = require('./4-names')
+
+// can also destructure like ... const {sayHi} = s
 const functions = require('./5-utils')
+
 
 // sayHi('barkley');
 // sayHi(peter);
