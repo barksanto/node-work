@@ -1,9 +1,12 @@
 // CommonJS, every file is a module by default
 // Modules- Encapsulated Code (Only share minimum)
+
+// get the module from 4-names.js file
 const names = require('./4-names')
+const functions = require('./5-utils')
 
 // sayHi('barkley');
 // sayHi(peter);
 // sayHi(john);
 
-console.log(names.john)
+console.log(functions.sayHi(names.john))
