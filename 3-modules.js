@@ -1,15 +1,9 @@
 // CommonJS, every file is a module by default
 // Modules- Encapsulated Code (Only share minimum)
+const names = require('./4-names')
 
+// sayHi('barkley');
+// sayHi(peter);
+// sayHi(john);
 
-
-const john = 'john';
-const peter = 'peter';
-
-const sayHi = (name) =>{
-  console.log(`Hello there, ${name}`)
-}
-
-sayHi('barkley');
-sayHi(peter);
-sayHi(john);
+console.log(names.john)
