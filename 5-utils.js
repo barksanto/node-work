@@ -1,5 +1,3 @@
-const { ModelBuildPage } = require("twilio/lib/rest/preview/understand/assistant/modelBuild");
-
 const sayHi = (name) =>{
   console.log(`Hello there, ${name}`);
 }

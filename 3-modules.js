@@ -6,10 +6,10 @@ const names = require('./4-names')
 
 // can also destructure like ... const {sayHi} = s
 const functions = require('./5-utils')
-
-
+const data = require('./6-alternate-flavor')
+const thing = require('./7-mind-grenade')
 // sayHi('barkley');
 // sayHi(peter);
 // sayHi(john);
 
-console.log(functions.sayHi(names.john))
+// console.log(functions.sayHi(names.john))

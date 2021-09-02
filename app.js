@@ -1,4 +1,11 @@
-// const data = require('./6-alternate-flavor');
-// console.log(data)
+// OS Module
+const os = require('os');
 
-require('./7-mind-grenade')
+//info about current user
+const user = os.userInfo()
+
+//method returns the system uptime in seconds
+const uptime = os.uptime()
+
+console.log(`The System Uptime is: ${uptime/60/60} hrs.`);
+
