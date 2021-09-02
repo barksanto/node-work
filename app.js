@@ -1,12 +1,13 @@
-const path = require('path');
+const {readFileSync, writeFileSync} = require('fs');
 
-const filePath = path.join('/content', 'subfolder', 'test.txt') 
-console.log(filePath)
+const first = readFileSync('./content/first.txt', 'utf8');
+const second = readFileSync('./content/subfolder/second.txt', 'utf8');
 
-// returns the last thing in that file path
-const base = path.basename(filePath);
-console.log(base)
+// console.log(first, second)
 
-// resolve- returns an absolute path
-const absolute = path.resolve(__dirname, 'content', 'subfolder', 'test.txt');
-console.log(absolute)
+
+//1st argument is the file path + name, second is what you want to add to it
+writeFileSync('./content/result-sync.txt', `Here is the result :), ${first}, ${second}`);
+
+
+
