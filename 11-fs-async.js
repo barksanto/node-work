@@ -16,6 +16,7 @@ readFile('./content/first.txt','utf8' ,(err, result)=>{
   }
   const second = result;
 
+  // i'm writing into the file - not adding a new one with this name
   writeFile(
     './content/result-async.txt',
     `Here is the result: ${first}, ${second}`, 
