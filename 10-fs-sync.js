@@ -1,4 +1,5 @@
 const {readFileSync, writeFileSync} = require('fs');
+const { setTimeout } = require('timers/promises');
 console.log('start')
 const first = readFileSync('./content/first.txt', 'utf8');
 const second = readFileSync('./content/subfolder/second.txt', 'utf8');
